@@ -1,0 +1,10 @@
+{
+  "kind": "Namespace",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "[first initial][lastname]", #edit, dropping the brackets, for example: "name": "amizne"
+    "labels": {
+      "name": "[first initial][lastname]" #edit, dropping the brackets, for example: "name": "amizne"
+    }
+  }
+}
