@@ -1,6 +1,7 @@
 **Fetch credentials for your cluster**
-
+```shell
 gcloud container clusters get-credentials *NAME* [--internal-ip] [--region = *REGION* | --zone = *ZONE*, -z *ZONE*]  --project *PROJECT*
+```
 
 **Clone the demo repo**
 
