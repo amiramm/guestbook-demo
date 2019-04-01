@@ -1,7 +1,6 @@
 **Fetch credentials for your cluster**
-```shell
+
 gcloud container clusters get-credentials *NAME* [--internal-ip] [--region = *REGION* | --zone = *ZONE*, -z *ZONE*]  --project *PROJECT*
-```
 
 **Clone the demo repo**
 
@@ -39,7 +38,7 @@ kubectl config current-context
 ```
 
 ```shell
-kubectl config set-context [namespace] --namespace=[namespace]-- \
+kubectl config set-context [namespace] --namespace=[namespace] \
   --cluster=[cluster] \
   --user=[user]
 ```
@@ -135,9 +134,9 @@ exit
 ```
 
 **Cleaning up **
-```shell
-kubectl delete deployment redis-master
+```shel
 kubectl delete deployment redis-slave
+kubectl delete deployment redis-master
 kubectl delete service -l app=redis
 kubectl delete deployment frontend
 kubectl delete service -l app=guestbook
