@@ -134,12 +134,17 @@ exit
 ```
 
 **Cleaning up **
-```shel
+```shell
 kubectl delete deployment redis-slave
 kubectl delete deployment redis-master
 kubectl delete service -l app=redis
 kubectl delete deployment frontend
 kubectl delete service -l app=guestbook
 ```
+
+```shell
+kubectl delete namespace [my-namespace]
+```
+
 
 > Written with [StackEdit](https://stackedit.io/).
