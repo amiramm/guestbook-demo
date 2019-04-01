@@ -7,48 +7,7 @@ gcloud container clusters get-credentials *NAME* [--internal-ip] [--region = *RE
 ```shell
 git clone https://github.com/amiramm/guestbook-demo
 ```
-<br>
 
-**Creating a namespace**
-
-```shell
-kubectl get namespaces
-```
-
- - Edit the *namespace.json* file, using your first initail + last name as the namespace name and label
-
-```shell
-vi guestbook-demo/namespace.json
-```
-
-```shell
-kubectl create -f guestbook-demo/namespace.json
-```
-
-```shell
-kubectl get namespaces --show-labels
- ```
- 
- ```shell
-kubectl config view
-```
-
-```shell
-kubectl config current-context
-```
-
-```shell
-kubectl config set-context [namespace] --namespace=[namespace] \
-  --cluster=[cluster] \
-  --user=[user]
-```
-
-```shell
-kubectl config use-context [my context]
-```
-```shell
-kubectl config current-context
-```
 <br>
 
 **Watching for pods being deployed**
