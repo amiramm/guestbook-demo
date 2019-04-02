@@ -66,7 +66,10 @@ kubectl apply -f guestbook-demo/frontend-service.yaml
 ```shell
 kubectl get service
 ```
-Open the EXTERNAL-IP of the frontend
+Open the EXTERNAL-IP of the frontend in your browser.
+On minikube use ```shell
+minikube service frontend
+```
 
 Scale the frontend up to 5 replicas
 
